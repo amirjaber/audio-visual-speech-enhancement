@@ -200,7 +200,7 @@ class SpeechEnhancementNetwork(object):
 				validation_speech_spectrograms
 			),
 
-			batch_size=16, epochs=1000,
+			batch_size=16, epochs=10,
 			callbacks=[checkpoint, lr_decay, early_stopping, tensorboard],
 			verbose=1
 		)
